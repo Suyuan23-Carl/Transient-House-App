@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Transient House App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Transient House App</h1>
+        <div class="button-group">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+            <button onclick="showAdminLogin()">Admin Login</button>
+        </div>
+    </div>
+    <div id="admin-login-popup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <h2>Admin Login</h2>
+            <input type="text" id="admin-username" placeholder="Username">
+            <input type="password" id="admin-password" placeholder="Password">
+            <button onclick="adminLogin()">Login</button>
+            <button onclick="closeAdminLogin()">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
